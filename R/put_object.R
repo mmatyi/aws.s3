@@ -164,7 +164,7 @@ function(
             acl <- match.arg(acl, c("private", "public-read", "public-read-write", "aws-exec-read", "authenticated-read", "bucket-owner-read", "bucket-owner-full-control"))
             headers <- c(headers, list(`x-amz-acl` = acl))
         } else {
-            headers <- c(headers, list(`x-amz-acl` = "private"))
+        #    headers <- c(headers, list(`x-amz-acl` = "private"))
         }
     }
 
